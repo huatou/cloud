@@ -1,0 +1,34 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+codegenerator/src/main/resources/
+codegenerator/src/test/
+codegenerator/target/
+config-server8001/src/test/
+config-server8001/target/
+eureka7100/src/test/
+eureka7100/target/
+eureka8100/src/test/
+eureka8100/target/
+eureka9100/src/test/
+eureka9100/target/
+file8091/file-app/src/test/
+file8091/file-app/target/
+file8091/file-core/src/main/resources/
+file8091/file-core/src/test/
+file8091/file-core/target/
+sleuth-zipkin9000/src/test/
+sleuth-zipkin9000/target/
+user8090/user-app/src/test/
+user8090/user-app/target/
+user8090/user-core/target/
+user8090/user-starter/src/
+user8090/user-starter/target/
+zuul-gateway8000/src/test/
+zuul-gateway8000/target/
