@@ -1,0 +1,26 @@
+server:
+  port: 8001 #服务端口
+spring:
+  application:
+    name: app-config-server #指定服务名
+  cloud:
+    config:
+      server:
+        git: #配置git仓库地址
+          uri: https://github.com/huatou/cloud-config.git
+          username: huatou    #码云账号（公有项目不需要设置）
+          password: yangzihua1994    #码云密码（公有项目不需要设置）
+      label: master    #分支名称
+  rabbitmq: #RabbitMQ相关的配置
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+#服务注册到eureka注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zigar:123456@eureka1:7100/eureka/,http://zigar:123456@eureka2:8100/eureka/,http://zigar:123456@eureka3:9100/eureka/
+  instance:
+    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+    instance-id: ${spring.application.name}###${server.port} #指定实例id

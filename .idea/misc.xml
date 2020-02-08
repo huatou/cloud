@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka8100/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka7100/pom.xml" />
+        <option value="$PROJECT_DIR$/file8091/pom.xml" />
+        <option value="$PROJECT_DIR$/file8092/pom.xml" />
+        <option value="$PROJECT_DIR$/file8093/pom.xml" />
+        <option value="$PROJECT_DIR$/sleuth-zipkin9000/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/config-client8002/pom.xml" />
+        <option value="$PROJECT_DIR$/file8092/pom.xml" />
+        <option value="$PROJECT_DIR$/file8093/pom.xml" />
+        <option value="$PROJECT_DIR$/keygenerator/pom.xml" />
+        <option value="$PROJECT_DIR$/kg/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

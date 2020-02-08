@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: app-sleuth-zipkin
+management:
+  metrics:
+    web:
+      server:
+        #避免访问zipkin页面报java.lang.IllegalArgumentException
+        auto-time-requests: false
+
+###SpringCloud
+#服务注册到eureka注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zigar:123456@eureka1:7100/eureka/,http://zigar:123456@eureka2:8100/eureka/,http://zigar:123456@eureka3:9100/eureka/
+  instance:
+    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+    instance-id: ${spring.application.name}###${server.port} #指定实例id

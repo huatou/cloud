@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zigar</groupId>
+    <artifactId>cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <modules>
+        <module>codegenerator</module>
+        <module>user8090</module>
+        <module>file8091</module>
+        <module>eureka8100</module>
+        <module>eureka7100</module>
+        <module>eureka9100</module>
+        <module>zuul-gateway8000</module>
+        <module>config-server8001</module>
+        <module>sleuth-zipkin9000</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <jjwt.version>0.9.0</jjwt.version>
+        <mybatis-plus.version>3.3.0</mybatis-plus.version>
+        <velocity-engine.version>2.1</velocity-engine.version>
+        <p6spy.version>3.8.5</p6spy.version>
+        <fasejson.version>1.2.47</fasejson.version>
+        <jackson-annotations.version>2.10.0</jackson-annotations.version>
+        <aspectjrt.version>1.9.4</aspectjrt.version>
+        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <zipkin-version>2.11.8</zipkin-version>
+    </properties>
+
+
+    <!-- 此处放置每个子模块都要用到的依赖-->
+    <dependencies>
+        <!-- lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!--jwt-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- mybatis-plus代码生成器-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- 模板引擎-->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity-engine.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fasejson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-annotations.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <!--定义snapshots库和releases库的nexus地址-->
+    <distributionManagement>
+        <repository>
+            <id>maven-release</id>
+            <url>
+                http://127.0.0.1:8081/repository/maven-releases/
+            </url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>
+                http://127.0.0.1:8081/repository/maven-snapshots/
+            </url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

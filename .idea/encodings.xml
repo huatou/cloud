@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codegenerator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-client8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka7100" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka8100" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka9100" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file8091" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file8091/file-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file8091/file-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sleuth-zipkin9000" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user8090" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user8090/user-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user8090/user-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user8090/user-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-gateway8000" charset="UTF-8" />
+  </component>
+</project>

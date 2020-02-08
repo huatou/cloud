@@ -1,0 +1,44 @@
+server:
+  port: 8000 #服务端口
+
+####Spring基础配置
+spring:
+  application:
+    name: app-zuul-gateway #指定服务名
+#  zipkin:
+#    base-url: http://localhost:9411/
+#  sleuth:
+#    sampler:
+#      probability: 1.0   #2.0后percentage改为probability
+##  rabbitmq: #RabbitMQ相关的配置
+##    host: 127.0.0.1
+##    port: 5672
+##    username: guest
+##    password: guest
+####服务注册到eureka注册中心的地址
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://zigar:123456@eureka1:7100/eureka/,http://zigar:123456@eureka2:8100/eureka/,http://zigar:123456@eureka3:9100/eureka/
+#  instance:
+#    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+#    ip-address: 127.0.0.1
+#    instance-id: ${spring.application.name}###${server.port} #指定实例id
+#
+##开启所有端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#
+#####服务网关
+##zuul:
+##  routes: #定义服务转发规则
+##    file-service: #file-service这个名字任意取的
+##      serviceId: app-file
+##      path: /file-service/** #配置请求URL的请求规则
+##    user-service: #user-service这个名字任意取的
+##      serviceId: app-user
+##      path: /user-service/** #配置请求URL的请求规则
+#
