@@ -1,6 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
+### Example userEntity template template
+### Example userEntity template
 
 # IntelliJ project files
 .idea
@@ -25,10 +25,10 @@ file8091/file-core/src/test/
 file8091/file-core/target/
 sleuth-zipkin9000/src/test/
 sleuth-zipkin9000/target/
-user8090/user-app/src/test/
-user8090/user-app/target/
-user8090/user-core/target/
-user8090/user-starter/src/
-user8090/user-starter/target/
+user8090/userEntity-app/src/test/
+user8090/userEntity-app/target/
+user8090/userEntity-core/target/
+user8090/userEntity-starter/src/
+user8090/userEntity-starter/target/
 zuul-gateway8000/src/test/
 zuul-gateway8000/target/

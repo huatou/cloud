@@ -1,0 +1,70 @@
+#自定义配置
+zigar:
+  hostname: 127.0.0.1
+  eureka:
+    username: zigar
+    password: 123456
+
+#系统配置
+
+spring:
+  application:
+    name: service-file
+  datasource:
+    url: jdbc:mysql://${zigar.hostname}:3306/zigar_cloud_file?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: zigar_file_admin
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  redis:
+    database: 1
+  zipkin:
+    base-url: http://${zigar.hostname}:9411
+    sender:
+      type: rabbit
+  sleuth:
+    sampler:
+      probability: 1.0   #2.0后percentage改为probability
+  rabbitmq: #RabbitMQ相关的配置
+    host: ${zigar.hostname}
+    port: 5672
+    username: guest
+    password: guest
+  main:
+    allow-bean-definition-overriding: true
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8002/users/current
+      prefer-token-info: false
+    client:
+      id: client_3
+      client-secret: 123456
+      access-token-uri: http://localhost:8002/oauth/token
+      user-authorization-uri: http://localhost:8002/oauth/authorize
+      grant-type: client_credentials
+      scope: select
+
+## 该配置节点为独立的节点，有很多同学容易将这个配置放在spring的节点下，导致配置无法被识别
+mybatis:
+  mapper-locations: classpath:dao/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+
+# 在feign中开启熔断器，不开启会报client服务不存在，dashboard中使用url ${applicationHost}:${port}/actuator/hystrix.stream
+feign:
+  hystrix:
+    enabled: true
+
+#开启所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    root: info

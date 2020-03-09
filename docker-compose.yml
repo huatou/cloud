@@ -1,0 +1,89 @@
+version: '2'
+services:
+  server-eureka7100:
+    image: server-eureka:v0.0.1
+    container_name: server-eureka7100
+    ports:
+      - 7100:7100
+    environment:
+      - server.port=7100
+  server-eureka8100:
+    image: server-eureka:v0.0.1
+    container_name: server-eureka8100
+    ports:
+      - 8100:8100
+    environment:
+      - server.port=8100
+  server-eureka9100:
+    image: server-eureka:v0.0.1
+    container_name: server-eureka9100
+    ports:
+      - 9100:9100
+    environment:
+      - server.port=9100
+
+  server-config8001:
+    image: server-config:v0.0.1
+    container_name: server-config8001
+    ports:
+      - 8001:8001
+    environment:
+      - server.port=8001
+  server-config8002:
+    image: server-config:v0.0.1
+    container_name: server-config8002
+    ports:
+      - 8002:8002
+    environment:
+      - server.port=8002
+
+  server-zuul9001:
+    image: server-zuul:v0.0.1
+    container_name: server-zuul9001
+    ports:
+      - 9001:9001
+    environment:
+      - server.port=9001
+      - spring.profiles.active=prod
+  server-zuul9002:
+    image: server-zuul:v0.0.1
+    container_name: server-zuul9002
+    ports:
+      - 9002:9002
+    environment:
+      - server.port=9002
+      - spring.profiles.active=prod
+
+  service-user8010:
+    image: service-user:v0.0.1
+    container_name: service-user8010
+    ports:
+      - 8010:8010
+    environment:
+      - server.port=8010
+      - spring.profiles.active=prod
+  service-user8011:
+    image: service-user:v0.0.1
+    container_name: service-user8011
+    ports:
+      - 8011:8011
+    environment:
+      - server.port=8011
+      - spring.profiles.active=prod
+
+  service-file8020:
+    image: service-file:v0.0.2
+    container_name: service-file8020
+    ports:
+      - 8020:8020
+    environment:
+      - server.port=8020
+      - spring.profiles.active=prod
+  service-file8021:
+    image: service-file:v0.0.2
+    container_name: service-file8021
+    ports:
+      - 8021:8021
+    environment:
+      - server.port=8021
+      - spring.profiles.active=prod
