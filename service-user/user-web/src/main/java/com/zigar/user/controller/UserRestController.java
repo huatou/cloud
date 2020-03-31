@@ -4,13 +4,13 @@ package com.zigar.user.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.zigar.api.entity.UserEntity;
-import com.zigar.api.entity.action.RequestInsertAction;
-import com.zigar.api.entity.action.RequestUpdateAction;
-import com.zigar.api.entity.model.Page;
-import com.zigar.api.entity.model.Results;
-import com.zigar.api.utils.request.PageHelperUtils;
+import com.zigar.core.action.RequestInsertAction;
+import com.zigar.core.action.RequestUpdateAction;
+import com.zigar.core.model.Page;
+import com.zigar.core.model.Results;
+import com.zigar.core.utils.PageHelperUtils;
 import com.zigar.user.config.ApplicationYmlBean;
-import com.zigar.user.service.UserService;
+import com.zigar.user.service.IUserService;
 import com.zigar.user.system.utils.request.RequestUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ import java.util.List;
 public class UserRestController {
 
     @Autowired
-    private UserService userService;
+    private IUserService userService;
 
     @Autowired
     private PasswordEncoder passwordEncoder;

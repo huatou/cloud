@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.apache.commons.lang.StringUtils;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -24,7 +25,6 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 @TableName("user")
 public class UserEntity implements Serializable {
-
 
     private static final long serialVersionUID = 1L;
 

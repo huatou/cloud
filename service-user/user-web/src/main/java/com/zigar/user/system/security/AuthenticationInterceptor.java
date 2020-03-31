@@ -3,9 +3,9 @@
 //import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 //import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 //import com.zigar.api.entity.UserEntity;
-//import com.zigar.api.system.exception.BusinessLogicException;
+//import com.zigar.core.exception.BusinessLogicException;
 //import com.zigar.user.service.UserService;
-//import com.zigar.api.system.properties.*;
+//import com.zigar.core.properties.*;
 //import com.zigar.user.system.utils.jwt.JwtTokenUtil;
 //import com.zigar.user.system.utils.jwt.PassToken;
 //import com.zigar.user.system.utils.request.RequestUtils;

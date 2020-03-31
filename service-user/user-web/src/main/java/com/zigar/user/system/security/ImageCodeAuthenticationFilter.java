@@ -1,6 +1,6 @@
 package com.zigar.user.system.security;//package com.zigar.user.system.security;
 //
-//import com.zigar.api.system.properties.SecurityProperties;
+//import com.zigar.core.properties.SecurityProperties;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //import org.springframework.beans.factory.annotation.Autowired;

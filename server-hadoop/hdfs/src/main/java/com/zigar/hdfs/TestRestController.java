@@ -1,6 +1,6 @@
 package com.zigar.hdfs;
 
-import com.zigar.api.entity.model.Results;
+import com.zigar.core.model.Results;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataOutputStream;

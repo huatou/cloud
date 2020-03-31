@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zigar.core.json.LocalDateTimeSerializerConfiguration,\
+  com.zigar.core.exception.ExceptionConfiguration,\
+  com.zigar.core.log.LogConfiguration,\
+  com.zigar.core.myabtisplus.MybatisPlusConfiguration,\
+  com.zigar.core.properties.PropertiesConfiguration,\
+  com.zigar.core.ui.UiConfiguration,\
+  com.zigar.core.utils.UtilsConfiguration

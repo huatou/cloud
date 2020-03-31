@@ -2,12 +2,12 @@ package com.zigar.file.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.zigar.api.entity.action.RequestInsertAction;
 import com.zigar.api.entity.FileEntity;
 import com.zigar.api.entity.UserEntity;
 import com.zigar.api.feign.UserFeignClient;
-import com.zigar.api.entity.model.Results;
-import com.zigar.api.system.properties.FileProperties;
+import com.zigar.core.action.RequestInsertAction;
+import com.zigar.core.model.Results;
+import com.zigar.core.properties.FileProperties;
 import com.zigar.file.config.ApplicationYmlBean;
 import com.zigar.file.service.FileService;
 import org.apache.commons.lang3.StringUtils;

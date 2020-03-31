@@ -3,8 +3,8 @@ package com.zigar.oauth2.security;//package com.zigar.user.system.security;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.zigar.api.entity.UserEntity;
-import com.zigar.api.system.exception.BusinessLogicException;
-import com.zigar.user.service.UserService;
+import com.zigar.core.exception.BusinessLogicException;
+import com.zigar.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -27,7 +27,7 @@ import java.util.List;
 public class CustomUserDetailService implements UserDetailsService {
 
     @Autowired
-    UserService userService;
+    IUserService userService;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {

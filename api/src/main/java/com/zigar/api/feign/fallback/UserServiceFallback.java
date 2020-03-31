@@ -2,7 +2,7 @@ package com.zigar.api.feign.fallback;
 
 import com.zigar.api.entity.UserEntity;
 import com.zigar.api.feign.UserFeignClient;
-import com.zigar.api.entity.model.Results;
+import com.zigar.core.model.Results;
 import org.springframework.stereotype.Service;
 
 /**

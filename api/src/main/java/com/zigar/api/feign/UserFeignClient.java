@@ -2,7 +2,7 @@ package com.zigar.api.feign;
 
 import com.zigar.api.entity.UserEntity;
 import com.zigar.api.feign.fallback.UserServiceFallback;
-import com.zigar.api.entity.model.Results;
+import com.zigar.core.model.Results;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

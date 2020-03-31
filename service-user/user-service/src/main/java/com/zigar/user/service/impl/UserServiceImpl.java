@@ -3,7 +3,7 @@ package com.zigar.user.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zigar.api.entity.UserEntity;
 import com.zigar.user.dao.UserMapper;
-import com.zigar.user.service.UserService;
+import com.zigar.user.service.IUserService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2020-01-15
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements IUserService {
 
 }

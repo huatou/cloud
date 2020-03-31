@@ -27,37 +27,6 @@
 
     </dependencies>
 
-
-<!--    <profiles>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash; 本地开发环境 &ndash;&gt;-->
-<!--            <id>dev</id>-->
-<!--            <properties>-->
-<!--                <profiles.active>dev</profiles.active>-->
-<!--                <mvn.eureka.url>${mvn.parent.eureka.url}</mvn.eureka.url>-->
-<!--            </properties>-->
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
-<!--        </profile>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash; 测试环境 &ndash;&gt;-->
-<!--            <id>test</id>-->
-<!--            <properties>-->
-<!--                <profiles.active>test</profiles.active>-->
-<!--                <mvn.eureka.url>192.168.3.102</mvn.eureka.url>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash; 生产环境 &ndash;&gt;-->
-<!--            <id>prod</id>-->
-<!--            <properties>-->
-<!--                <profiles.active>prod</profiles.active>-->
-<!--                <mvn.eureka.url>192.168.109.10</mvn.eureka.url>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--    </profiles>-->
-
     <build>
         <finalName>server-eureka</finalName>
         <plugins>

@@ -1,6 +1,6 @@
 //package com.zigar.user.system.security;
 //
-//import com.zigar.api.system.properties.*;
+//import com.zigar.core.properties.*;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.web.servlet.config.annotation.CorsRegistry;

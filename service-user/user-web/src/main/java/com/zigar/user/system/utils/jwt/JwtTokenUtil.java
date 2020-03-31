@@ -1,8 +1,8 @@
 package com.zigar.user.system.utils.jwt;
 
 import com.zigar.api.entity.UserEntity;
-import com.zigar.user.service.UserService;
-import com.zigar.api.system.properties.JwtProperties;
+import com.zigar.core.properties.JwtProperties;
+import com.zigar.user.service.IUserService;
 import com.zigar.user.system.utils.date.DateUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Clock;
@@ -29,7 +29,7 @@ public class JwtTokenUtil {
     JwtProperties jwtProperties;
 
     @Autowired
-    UserService userService;
+    IUserService userService;
 
     @Autowired
     RedisTemplate redisTemplate;

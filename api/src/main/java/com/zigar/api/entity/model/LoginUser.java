@@ -1,6 +1,6 @@
 package com.zigar.api.entity.model;
 
-import com.zigar.api.entity.action.RequestLoginAction;
+import com.zigar.core.action.RequestLoginAction;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
